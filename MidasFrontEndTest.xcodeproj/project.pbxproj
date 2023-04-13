@@ -11,6 +11,25 @@
 		BA98D1D629E7FD66005698E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D1D529E7FD66005698E5 /* ContentView.swift */; };
 		BA98D1D829E7FD68005698E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA98D1D729E7FD68005698E5 /* Assets.xcassets */; };
 		BA98D1DB29E7FD68005698E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA98D1DA29E7FD68005698E5 /* Preview Assets.xcassets */; };
+		BA98D1E529E80061005698E5 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D1E429E80061005698E5 /* SplashScreen.swift */; };
+		BA98D1E729E800DD005698E5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D1E629E800DD005698E5 /* Home.swift */; };
+		BA98D1E929E80351005698E5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D1E829E80351005698E5 /* Login.swift */; };
+		BA98D1EC29E8084F005698E5 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D1EB29E8084F005698E5 /* InputTextField.swift */; };
+		BA98D1EE29E80978005698E5 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D1ED29E80978005698E5 /* SecureTextField.swift */; };
+		BA98D1F029E80ADC005698E5 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D1EF29E80ADC005698E5 /* Register.swift */; };
+		BA98D1F429E84BD3005698E5 /* RadioButtonField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D1F329E84BD3005698E5 /* RadioButtonField.swift */; };
+		BA98D1F629E84C05005698E5 /* RadioButtonGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D1F529E84C05005698E5 /* RadioButtonGroups.swift */; };
+		BA98D1FA29E84DF9005698E5 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA98D1F829E84DF9005698E5 /* UserModel.xcdatamodeld */; };
+		BA98D1FC29E84E9D005698E5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D1FB29E84E9D005698E5 /* DataController.swift */; };
+		BA98D20229E86A00005698E5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D20129E86A00005698E5 /* UserModel.swift */; };
+		BA98D20429E88568005698E5 /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D20329E88568005698E5 /* AuthUser.swift */; };
+		BA98D20629E88CAD005698E5 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D20529E88CAD005698E5 /* UserView.swift */; };
+		BA98D20829E88CBA005698E5 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D20729E88CBA005698E5 /* AdminView.swift */; };
+		BA98D20A29E895B0005698E5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D20929E895B0005698E5 /* UserViewModel.swift */; };
+		BA98D20D29E895FB005698E5 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BA98D20C29E895FB005698E5 /* SDWebImageSwiftUI */; };
+		BA98D21029E89627005698E5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = BA98D20F29E89627005698E5 /* SwiftyJSON */; };
+		BA98D21229E89A4D005698E5 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D21129E89A4D005698E5 /* PhotosModel.swift */; };
+		BA98D21429E89A76005698E5 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA98D21329E89A76005698E5 /* PhotoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +38,23 @@
 		BA98D1D529E7FD66005698E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA98D1D729E7FD68005698E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA98D1DA29E7FD68005698E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA98D1E429E80061005698E5 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		BA98D1E629E800DD005698E5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		BA98D1E829E80351005698E5 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		BA98D1EB29E8084F005698E5 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
+		BA98D1ED29E80978005698E5 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
+		BA98D1EF29E80ADC005698E5 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		BA98D1F329E84BD3005698E5 /* RadioButtonField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RadioButtonField.swift; path = ../../../../../../Downloads/RadioButtonField.swift; sourceTree = "<group>"; };
+		BA98D1F529E84C05005698E5 /* RadioButtonGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonGroups.swift; sourceTree = "<group>"; };
+		BA98D1F929E84DF9005698E5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		BA98D1FB29E84E9D005698E5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		BA98D20129E86A00005698E5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		BA98D20329E88568005698E5 /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
+		BA98D20529E88CAD005698E5 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		BA98D20729E88CBA005698E5 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		BA98D20929E895B0005698E5 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		BA98D21129E89A4D005698E5 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		BA98D21329E89A76005698E5 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA98D21029E89627005698E5 /* SwiftyJSON in Frameworks */,
+				BA98D20D29E895FB005698E5 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +89,12 @@
 		BA98D1D229E7FD66005698E5 /* MidasFrontEndTest */ = {
 			isa = PBXGroup;
 			children = (
+				BA98D20029E869DC005698E5 /* Model */,
+				BA98D1E329E8003E005698E5 /* Views */,
+				BA98D1FD29E86837005698E5 /* ViewModel */,
+				BA98D1F729E84DC9005698E5 /* DataModel */,
+				BA98D1EA29E80830005698E5 /* Utils */,
 				BA98D1D329E7FD66005698E5 /* MidasFrontEndTestApp.swift */,
-				BA98D1D529E7FD66005698E5 /* ContentView.swift */,
 				BA98D1D729E7FD68005698E5 /* Assets.xcassets */,
 				BA98D1D929E7FD68005698E5 /* Preview Content */,
 			);
@@ -65,6 +107,59 @@
 				BA98D1DA29E7FD68005698E5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA98D1E329E8003E005698E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA98D1D529E7FD66005698E5 /* ContentView.swift */,
+				BA98D1E429E80061005698E5 /* SplashScreen.swift */,
+				BA98D1E629E800DD005698E5 /* Home.swift */,
+				BA98D1E829E80351005698E5 /* Login.swift */,
+				BA98D1EF29E80ADC005698E5 /* Register.swift */,
+				BA98D20529E88CAD005698E5 /* UserView.swift */,
+				BA98D20729E88CBA005698E5 /* AdminView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA98D1EA29E80830005698E5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BA98D1EB29E8084F005698E5 /* InputTextField.swift */,
+				BA98D1ED29E80978005698E5 /* SecureTextField.swift */,
+				BA98D1F329E84BD3005698E5 /* RadioButtonField.swift */,
+				BA98D1F529E84C05005698E5 /* RadioButtonGroups.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BA98D1F729E84DC9005698E5 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA98D1FB29E84E9D005698E5 /* DataController.swift */,
+				BA98D1F829E84DF9005698E5 /* UserModel.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		BA98D1FD29E86837005698E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA98D20329E88568005698E5 /* AuthUser.swift */,
+				BA98D20929E895B0005698E5 /* UserViewModel.swift */,
+				BA98D21329E89A76005698E5 /* PhotoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BA98D20029E869DC005698E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA98D20129E86A00005698E5 /* UserModel.swift */,
+				BA98D21129E89A4D005698E5 /* PhotosModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +178,10 @@
 			dependencies = (
 			);
 			name = MidasFrontEndTest;
+			packageProductDependencies = (
+				BA98D20C29E895FB005698E5 /* SDWebImageSwiftUI */,
+				BA98D20F29E89627005698E5 /* SwiftyJSON */,
+			);
 			productName = MidasFrontEndTest;
 			productReference = BA98D1D029E7FD66005698E5 /* MidasFrontEndTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +210,10 @@
 				Base,
 			);
 			mainGroup = BA98D1C729E7FD66005698E5;
+			packageReferences = (
+				BA98D20B29E895FA005698E5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				BA98D20E29E89627005698E5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = BA98D1D129E7FD66005698E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +240,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA98D1E529E80061005698E5 /* SplashScreen.swift in Sources */,
+				BA98D1FC29E84E9D005698E5 /* DataController.swift in Sources */,
+				BA98D21229E89A4D005698E5 /* PhotosModel.swift in Sources */,
+				BA98D1E929E80351005698E5 /* Login.swift in Sources */,
 				BA98D1D629E7FD66005698E5 /* ContentView.swift in Sources */,
+				BA98D1F629E84C05005698E5 /* RadioButtonGroups.swift in Sources */,
+				BA98D1E729E800DD005698E5 /* Home.swift in Sources */,
+				BA98D1EE29E80978005698E5 /* SecureTextField.swift in Sources */,
+				BA98D20629E88CAD005698E5 /* UserView.swift in Sources */,
+				BA98D20229E86A00005698E5 /* UserModel.swift in Sources */,
+				BA98D1EC29E8084F005698E5 /* InputTextField.swift in Sources */,
+				BA98D1F429E84BD3005698E5 /* RadioButtonField.swift in Sources */,
+				BA98D20429E88568005698E5 /* AuthUser.swift in Sources */,
+				BA98D1F029E80ADC005698E5 /* Register.swift in Sources */,
+				BA98D1FA29E84DF9005698E5 /* UserModel.xcdatamodeld in Sources */,
+				BA98D21429E89A76005698E5 /* PhotoViewModel.swift in Sources */,
+				BA98D20A29E895B0005698E5 /* UserViewModel.swift in Sources */,
+				BA98D20829E88CBA005698E5 /* AdminView.swift in Sources */,
 				BA98D1D429E7FD66005698E5 /* MidasFrontEndTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +459,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA98D20B29E895FA005698E5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		BA98D20E29E89627005698E5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA98D20C29E895FB005698E5 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA98D20B29E895FA005698E5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		BA98D20F29E89627005698E5 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA98D20E29E89627005698E5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		BA98D1F829E84DF9005698E5 /* UserModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA98D1F929E84DF9005698E5 /* Model.xcdatamodel */,
+			);
+			currentVersion = BA98D1F929E84DF9005698E5 /* Model.xcdatamodel */;
+			path = UserModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BA98D1C829E7FD66005698E5 /* Project object */;
 }
