@@ -62,7 +62,10 @@ struct UserRowView: View {
                 Text("ID:")
                     .foregroundColor(.secondary)
                 Spacer()
-                Text("\(user.id!)")
+                if user.id != nil {
+                    Text("\(user.id!)")
+                }
+                
             }
             
             HStack(alignment: .top) {
