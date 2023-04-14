@@ -54,48 +54,42 @@ struct AdminView: View {
 }
 
 struct UserRowView: View {
-    let user: User
+    @ObservedObject var user: User
     
     var body: some View {
-        
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 12) {
             HStack(alignment: .top) {
                 Text("ID:")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
+                Spacer()
                 Text("\(user.id!)")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.primary)
             }
+            
             HStack(alignment: .top) {
                 Text("Username:")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
+                Spacer()
                 Text(user.username ?? "")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.primary)
             }
+            
             HStack(alignment: .top) {
                 Text("Email:")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
+                Spacer()
                 Text(user.email ?? "")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.primary)
             }
+            
             HStack(alignment: .top) {
                 Text("Role:")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
+                Spacer()
                 Text(user.role ?? "")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.primary)
             }
         }
         .padding()
         .background(Color.white)
         .cornerRadius(10)
-        .shadow(radius: 5)
+        .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0, y: 5)
     }
 }
 

@@ -38,7 +38,7 @@ struct Login: View {
                 
                 NavigationLink(destination: Home()){
                     Button(action: {
-                        var user = DataController().login(email: self.email, password: self.password, context: manageObjContext)
+                        let user = DataController().login(email: self.email, password: self.password, context: manageObjContext)
                         self.authUser.fetchUser(user: user)
                         
                     }) {
@@ -56,7 +56,11 @@ struct Login: View {
                     Spacer()
                     NavigationLink(destination: Register()){
                         Text("Register").font(.callout).foregroundColor(.blue)
-                    }
+                    }.simultaneousGesture(TapGesture().onEnded{
+                        self.email = ""
+                        self.password = ""
+                        self.authUser.resetLoginValidation()
+                    })
                     
                 }
                 .frame(width: 300, height: 50)

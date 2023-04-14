@@ -22,6 +22,10 @@ class AuthUser: ObservableObject {
     
     @Published var user: UserModel? = nil
     
+    @Published var registrationValidation: Bool = true
+    
+    @Published var loginValidation: Bool = true
+    
     
     func fetchUser(user: UserModel?) {
         
@@ -40,6 +44,24 @@ class AuthUser: ObservableObject {
         DispatchQueue.main.async {
             self.user = nil
             self.isLoggedin = false
+        }
+    }
+    
+    func regisValidation(bool: Bool) {
+        DispatchQueue.main.async {
+            self.registrationValidation = bool
+        }
+    }
+    
+    func resetLoginValidation() {
+        DispatchQueue.main.async {
+            self.isCorrect = true
+        }
+    }
+    
+    func resetRegisterValidation() {
+        DispatchQueue.main.async {
+            self.registrationValidation = true
         }
     }
     

@@ -10,6 +10,8 @@ import SwiftUI
 struct Register: View {
 //    @Binding var rootIsActive : Bool
     
+    @EnvironmentObject var authUser : AuthUser
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     @Environment (\.managedObjectContext) var manageObjContext
@@ -45,11 +47,23 @@ struct Register: View {
                     
                 }
                 
+                if(!self.authUser.registrationValidation) {
+                    Text("Please fill all the required field").foregroundColor(.red)
+                }
+                
                 NavigationLink(destination: Login()){
                     Button(action: {
-                        DataController().addUser(username: self.username, email: self.email, password: self.password, role: self.role, context: manageObjContext)
-                        dismiss()
-                        self.presentationMode.wrappedValue.dismiss()
+                        
+                        if self.email == "" || self.username == "" || self.password == "" || self.email == "" || self.role == "" {
+                            self.authUser.regisValidation(bool: false)
+                        } else {
+                            DataController().addUser(username: self.username, email: self.email, password: self.password, role: self.role, context: manageObjContext)
+                            dismiss()
+                            self.authUser.regisValidation(bool: true)
+                            self.presentationMode.wrappedValue.dismiss()
+                        }
+                        
+                        
                     }) {
                         Text("Register")
                             .foregroundColor(.white)
@@ -79,6 +93,9 @@ struct Register: View {
                 
             }
             .navigationBarHidden(true)
+        }
+        .onAppear{
+            self.authUser.resetRegisterValidation()
         }
     }
 }
