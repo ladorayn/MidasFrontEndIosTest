@@ -65,7 +65,12 @@ struct Register: View {
                     Text("Already have an account?").font(.caption)
                     
                     NavigationLink(destination: Login()){
-                        Text("Login").font(.caption)
+                        Button(action: {
+                            self.presentationMode.wrappedValue.dismiss()
+                        }) {
+                            Text("Login").font(.caption)
+                        }
+                        
                     }
                 }
                 
