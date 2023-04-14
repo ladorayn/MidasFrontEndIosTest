@@ -26,6 +26,8 @@ struct AdminView: View {
                     ForEach(users, id: \.id) { user in
                         NavigationLink(destination: EditUserView(user: user)) {
                             UserRowView(user: user)
+                        }.onAppear{
+                            self.authUser.resetEditValidation()
                         }
                     }
                     .onDelete(perform: delete)
@@ -99,6 +101,8 @@ struct UserRowView: View {
 struct EditUserView: View {
     let user: User
     
+    
+    @EnvironmentObject var authUser: AuthUser
     @Environment(\.managedObjectContext) var context
     @Environment(\.presentationMode) var presentationMode
     
@@ -165,14 +169,29 @@ struct EditUserView: View {
                         self.role = selected
                         
                     }.frame(maxWidth: geometry.size.width * 0.8)
+                        .onAppear{
+                            self.role = self.user.role ?? ""
+                            
+                        }
+                }
+                
+                if(!self.authUser.editValidation) {
+                    Text("All fields cannot be blank").foregroundColor(.red)
                 }
                 
                 
                 Button(action:
                         {
-                            let dataController = DataController()
-                            dataController.editUser(user: user, username: username, email: email, password: password, role: role, context: context)
-                            presentationMode.wrappedValue.dismiss()
+                    if self.email == "" || self.username == "" || self.password == "" || self.email == "" || self.role == "" {
+                        self.authUser.editFieldValidation(bool: false)
+                    }
+                    else {
+                        let dataController = DataController()
+                        dataController.editUser(user: user, username: username, email: email, password: password, role: role, context: context)
+                        self.authUser.editFieldValidation(bool: true)
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                            
                         }
                 ) {
                     Text("Save")

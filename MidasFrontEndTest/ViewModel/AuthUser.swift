@@ -24,6 +24,8 @@ class AuthUser: ObservableObject {
     
     @Published var registrationValidation: Bool = true
     
+    @Published var editValidation: Bool = true
+    
     @Published var loginValidation: Bool = true
     
     
@@ -64,6 +66,19 @@ class AuthUser: ObservableObject {
             self.registrationValidation = true
         }
     }
+    
+    func editFieldValidation(bool: Bool) {
+        DispatchQueue.main.async {
+            self.editValidation = bool
+        }
+    }
+    
+    func resetEditValidation() {
+        DispatchQueue.main.async {
+            self.editValidation = true
+        }
+    }
+    
     
     
 }
